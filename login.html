@@ -6,34 +6,45 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<title>Book Reading App Login</title>
 		<link rel="stylesheet" href="css/login.css" />
-		<title>Document</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section class="login-section">
-				<h1>Login</h1>
-				<form>
-					<label for="username">Username:</label>
-					<input type="text" id="username" name="username" />
-					<label for="password">Password:</label>
-					<input type="password" id="password" name="password" />
-					<button type="submit">Login</button>
-				</form>
-				<p>Don't have an account? <a href="#">Sign up</a></p>
-			</section>
-		</main>
-		<footer>
-			<p>&copy; 2023 Login Page</p>
-		</footer>
+		<div class="login-container">
+			<div class="icon-bar top-icon-bar">
+				<!-- top icon bar -->
+				<img src="icon1.png" alt="icon1" />
+				<img src="icon2.png" alt="icon2" />
+				<img src="icon3.png" alt="icon3" />
+			</div>
+			<div class="logo">
+				<!-- logo icon -->
+				<img
+					src="./assets/images/owl.svg"
+					alt="Reading Programs"
+					class="logo-image"
+				/>
+			</div>
+			<h1 class="app-title">Reading Programs.</h1>
+
+			<div class="icon-bar bottom-icon-bar">
+				<!-- bottom icon bar -->
+				<img src="icon1.png" alt="icon1" />
+				<img src="icon2.png" alt="icon2" />
+				<img src="icon3.png" alt="icon3" />
+				<img src="icon4.png" alt="icon4" />
+			</div>
+
+			<button class="btn login-btn">Login</button>
+			<button class="btn facebook-btn">Login with Facebook</button>
+
+			<div class="horizontal-line-container">
+				<hr class="horizontal-line" />
+			</div>
+
+			<div class="sign-up">
+				<p>Sign up <a href="#">→</a></p>
+			</div>
+		</div>
 	</body>
 </html>
