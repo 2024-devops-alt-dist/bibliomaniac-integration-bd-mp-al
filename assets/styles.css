@@ -1,0 +1,76 @@
+/* Basic reset and mobile-first styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.book img {
+    width: 50px; /* Small thumbnail size */
+    height: auto;
+    border-radius: 5px;
+}
+
+.book p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.page_title_container {
+    display: flex;
+    align-items: center; /* Vertically center the image and text */
+    gap: 10px; /* Space between the image and the h1 */
+    margin-bottom: 5%;
+}
+
+.page_title_container img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+.page_title_container h1 {
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+}
+
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .book {
+        flex-direction: row;
+        padding: 15px;
+    }
+}
