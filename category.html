@@ -8,20 +8,88 @@
 		/>
 		<link rel="stylesheet" href="css/category.css" />
 		<title>Book Reading App Category</title>
-		<link rel="stylesheet" href="css/category.css" />
 	</head>
 	<body>
-		<div class="container">
+		<!-- Mobile Navbar -->
+		<header class="header">
+			<nav class="navbar">
+				<ul class="nav-ul">
+					<li>
+						<a href="index.html"
+							><img
+								src="assets/images/owl.svg"
+								alt="Home"
+								class="nav-icon"
+						/></a>
+					</li>
+					<li>
+						<a href="category.html"
+							><img
+								src="assets/images/category.svg"
+								alt="Categories"
+								class="nav-icon"
+						/></a>
+					</li>
+					<li>
+						<a href="collection.html"
+							><img
+								src="assets/images/collection.svg"
+								alt="Collection"
+								class="nav-icon"
+						/></a>
+					</li>
+					<li>
+						<a href="login.html"
+							><img
+								src="assets/images/user.svg"
+								alt="User"
+								class="nav-icon"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Desktop Navbar -->
+		<header class="desktop-header">
+			<nav class="desktop-navbar">
+				<div class="title-group">
+					<a href="index.html"
+						><img
+							src="assets/images/logo-navbar.svg"
+							alt="Bibliomaniac Logo"
+							class="logo-header"
+					/></a>
+					<a href="index.html" class="header-title nav-link"
+						>Bibliomaniac</a
+					>
+				</div>
+				<ul class="desktop-nav-ul">
+					<li><a href="index.html" class="nav-link">Home</a></li>
+					<li>
+						<a href="category.html" class="nav-link">Categories</a>
+					</li>
+					<li>
+						<a href="collection.html" class="nav-link">Collection</a>
+					</li>
+					<li><a href="login.html" class="nav-link">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main>
 			<h1>Category</h1>
-			<div class="category">
-				<div class="category-item">
+			<section class="category">
+				<article class="category-item">
 					<img src="./assets/images/book.svg" alt="Story book" />
 					<div class="text">
 						<h2>Story book</h2>
 						<p>We read storybooks and look at cartoons</p>
 					</div>
-				</div>
-				<div class="category-item">
+				</article>
+
+				<article class="category-item">
 					<img
 						src="./assets/images/blocks.svg"
 						alt="Intelligence books"
@@ -30,8 +98,9 @@
 						<h2>Intelligence books</h2>
 						<p>The emotions develop in parallel with the intellect</p>
 					</div>
-				</div>
-				<div class="category-item">
+				</article>
+
+				<article class="category-item">
 					<img
 						src="./assets/images/hat-full.svg"
 						alt="Learning books"
@@ -40,8 +109,9 @@
 						<h2>Learning books</h2>
 						<p>Experienced teachers help you learn quickly.</p>
 					</div>
-				</div>
-				<div class="category-item">
+				</article>
+
+				<article class="category-item">
 					<img
 						src="./assets/images/art-category.svg"
 						alt="Art books"
@@ -50,14 +120,8 @@
 						<h2>Art books</h2>
 						<p>Encourage Children to be sensitive and artistic.</p>
 					</div>
-				</div>
-			</div>
-			<div class="footer">
-				<img src="icon1.png" alt="footerI" />
-				<img src="icon2.png" alt="footerI" />
-				<img src="icon3.png" alt="footerI" />
-				<img src="icon4.png" alt="footerI" />
-			</div>
-		</div>
+				</article>
+			</section>
+		</main>
 	</body>
 </html>
