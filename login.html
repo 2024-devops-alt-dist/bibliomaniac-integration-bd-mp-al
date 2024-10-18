@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<!-- Placeholder div to insert the content -->
+		<div id="login-container"></div>
+
+		<script>
+			function loadLoginContent() {
+				var screenWidth = window.innerWidth; // Get screen width
+				var fileToLoad;
+
+				// Check if screen width is mobile
+				if (screenWidth < 768) {
+					fileToLoad = "loginMobile.html";
+				} else {
+					fileToLoad = "loginDesktop.html";
+				}
+
+				fetch(fileToLoad)
+					.then(function (response) {
+						return response.text();
+					})
+					.then(function (html) {
+						document.body.innerHTML = html;
+					})
+					.catch(function (error) {
+						console.error("Error loading the file:", error);
+					});
+			}
+
+			// Load the login content on page load
+			window.onload = loadLoginContent;
+
+			// Reload content when the window is resized
+			window.onresize = loadLoginContent;
+		</script>
+	</body>
+</html>
