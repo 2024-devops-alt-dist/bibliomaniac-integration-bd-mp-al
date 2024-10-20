@@ -6,38 +6,144 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link rel="stylesheet" href="./assets/styles.css" />
+		<link rel="stylesheet" href="css/loginMobile.css" />
+		<link rel="stylesheet" href="css/loginDesktop.css" />
 		<title>Login Page</title>
-	</head>
-	<body>
-		<script>
-			function loadLoginContent() {
-				var screenWidth = window.innerWidth; // Get screen width
-				var fileToLoad;
-
-				// Check if screen width is mobile
-				if (screenWidth < 768) {
-					fileToLoad = "loginMobile.html";
-				} else {
-					fileToLoad = "loginDesktop.html";
+		<style>
+			/* Media query for devices with a maximum width of 768px (mobile devices) */
+			@media screen and (max-width: 768px) {
+				.lmbl_login-container {
+					display: flex;
 				}
-
-				fetch(fileToLoad)
-					.then(function (response) {
-						return response.text();
-					})
-					.then(function (html) {
-						document.body.innerHTML = html;
-					})
-					.catch(function (error) {
-						console.error("Error loading the file:", error);
-					});
+				.ldsk_login-container {
+					display: none;
+				}
 			}
 
-			// Load the login content on page load
-			window.onload = loadLoginContent;
+			/* Media query for devices larger than 768px (desktops and tablets) */
+			@media screen and (min-width: 769px) {
+				.lmbl_login-container {
+					display: none;
+				}
+				.ldsk_login-container {
+					display: flex;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Mobile version of the login page -->
+		<div class="lmbl_login-container">
+			<div class="lmbl_icon-bar lmbl_top-icon-bar">
+				<img src="./assets/images/book.svg" alt="icon1" />
+				<img src="./assets/images/art-category.svg" alt="icon2" />
+				<img src="./assets/images/pot.svg" alt="icon3" />
+			</div>
+			<div class="lmbl_logo">
+				<img
+					src="./assets/images/owl-login.svg"
+					alt="Reading Programs"
+					class="lmbl_logo-image"
+				/>
+			</div>
+			<h1 class="lmbl_app-title">Reading Programs.</h1>
 
-			// Reload content when the window is resized
-			window.onresize = loadLoginContent;
-		</script>
+			<div class="lmbl_icon-bar lmbl_bottom-icon-bar">
+				<img src="./assets/images/hat-full.svg" alt="icon1" />
+				<img src="./assets/images/train.svg" alt="icon2" />
+				<img src="./assets/images/pinwheel.svg" alt="icon3" />
+				<img src="./assets/images/shovel.svg" alt="icon4" />
+			</div>
+
+			<button class="lmbl_btn lmbl_login-btn">Login</button>
+			<button class="lmbl_btn lmbl_facebook-btn">
+				Login with Facebook
+			</button>
+
+			<div class="lmbl_horizontal-line-container">
+				<hr class="lmbl_horizontal-line" />
+			</div>
+
+			<div class="lmbl_sign-up">
+				<p>Sign up <a href="#">→</a></p>
+			</div>
+		</div>
+
+		<!-- Desktop version of the login page -->
+		<div class="ldsk_login-container">
+			<div class="ldsk_left-section">
+				<div class="ldsk_logo">
+					<img
+						src="./assets/images/owl-login.svg"
+						alt="Reading Programs Logo"
+					/>
+				</div>
+				<h1>Reading Programs.</h1>
+				<div class="ldsk_illustration">
+					<img
+						src="./assets/images/people-reading.svg"
+						alt="Illustration of People Reading"
+					/>
+				</div>
+			</div>
+
+			<div class="ldsk_right-section">
+				<div class="ldsk_login-box">
+					<h2>Login</h2>
+					<form>
+						<div class="ldsk_input-group">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								placeholder="username111@gmail.com"
+								required
+							/>
+						</div>
+						<div class="ldsk_input-group">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								id="password"
+								placeholder="Enter Password"
+								required
+							/>
+						</div>
+						<div class="ldsk_forgot-password">
+							<a href="#">FORGET PASSWORD?</a>
+						</div>
+						<button class="ldsk_login-btn" type="submit">
+							Login
+						</button>
+					</form>
+
+					<div class="ldsk_alternative-login">
+						<p>Login with</p>
+						<div class="ldsk_social-login">
+							<a href="#"
+								><img
+									src="./assets/images/social-google.svg"
+									alt="Google"
+							/></a>
+							<a href="#"
+								><img
+									src="./assets/images/social-facebook.svg"
+									alt="Facebook"
+							/></a>
+							<a href="#"
+								><img
+									src="./assets/images/social-twitter.svg"
+									alt="Twitter"
+							/></a>
+						</div>
+					</div>
+
+					<div class="ldsk_signup">
+						<p>New User? <a href="#">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
