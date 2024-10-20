@@ -39,7 +39,7 @@ body {
 }
 
 /* Container for the login */
-.login-container {
+.lmbl_login-container {
 	background-color: var(--background-color);
 	width: 100%;
 	height: 100%;
@@ -51,32 +51,32 @@ body {
 }
 
 /* General Icon bar */
-.icon-bar {
+.lmbl_icon-bar {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 20px;
 }
 
-.icon-bar img {
+.lmbl_icon-bar img {
 	width: 50px;
 	height: 50px;
 }
 
 /* Top Icon bar */
-.top-icon-bar {
+.lmbl_top-icon-bar {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
 /* Logo or Icon section */
-.logo img {
+.lmbl_logo img {
 	width: 100px;
 	height: 100px;
 	margin-bottom: 20px;
 	align-self: center;
 }
 
-.app-title {
+.lmbl_app-title {
 	font-size: var(--font-size-large);
 	color: var(--primary-color);
 	margin-bottom: 20px;
@@ -84,17 +84,17 @@ body {
 }
 
 /* Bottom Icon bar */
-.bottom-icon-bar {
+.lmbl_bottom-icon-bar {
 	margin-bottom: 20px;
 }
 
-.icon-bar img {
+.lmbl_icon-bar img {
 	width: 50px;
 	height: 50px;
 }
 
 /* Button styles */
-.btn {
+.lmbl_btn {
 	width: 100%;
 	padding: 15px;
 	border-radius: 30px;
@@ -104,31 +104,31 @@ body {
 	cursor: pointer;
 }
 
-.login-btn {
+.lmbl_login-btn {
 	background-color: var(--primary-color);
 	color: white;
 }
 
-.facebook-btn {
+.lmbl_facebook-btn {
 	background-color: transparent;
 	border: 2px solid var(--border-color);
 	color: var(--primary-color);
 	margin-top: -20px;
 }
 
-.facebook-btn:hover {
+.lmbl_facebook-btn:hover {
 	background-color: var(--primary-color);
 	color: white;
 }
 
 /* hr line */
-.horizontal-line-container {
+.lmbl_horizontal-line-container {
 	display: flex;
 	justify-content: center;
 	margin: 10px 0;
 }
 
-.horizontal-line {
+.lmbl_horizontal-line {
 	width: 80%;
 	height: 2px;
 	background-color: var(--primary-color);
@@ -136,53 +136,18 @@ body {
 }
 
 /* Sign-up section */
-.sign-up {
+.lmbl_sign-up {
 	margin-top: 0px;
 	text-align: center;
 }
 
-.sign-up a {
+.lmbl_sign-up a {
 	color: var(--primary-color);
 	text-decoration: none;
 	font-weight: bold;
 	font-size: var(--font-size-default);
 }
 
-.sign-up a:hover {
+.lmbl_sign-up a:hover {
 	text-decoration: underline;
 }
-
-/* Media query for larger screens */
-/* @media (min-width: 768px) {
-	.login-container {
-		max-width: 400px;
-		height: auto;
-		border-radius: 30px;
-		padding: 30px;
-	}
-
-	.logo img {
-		width: 100px;
-		height: 100px;
-	}
-
-	.app-title {
-		font-size: var(--font-size-large);
-		margin: 15px 0 25px 0;
-	}
-
-	.icon-bar img {
-		width: 50px;
-		height: 50px;
-	}
-
-	.btn {
-		padding: 15px;
-		font-size: var(--font-size-default);
-		margin: 10px 0;
-	}
-
-	.sign-up {
-		margin-top: 25px;
-	}
-} */
