@@ -31,7 +31,6 @@ body {
 
 body {
 	font-family: var(--font-primary);
-	background-color: var(--dark-background-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -150,4 +149,12 @@ body {
 
 .lmbl_sign-up a:hover {
 	text-decoration: underline;
+}
+
+/* Media query for devices with a maximum width of 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+	.lmbl_btn {
+		width: calc(100% - 40px); /* Accounting for padding */
+		/* margin-bottom: 40px; */
+	}
 }
