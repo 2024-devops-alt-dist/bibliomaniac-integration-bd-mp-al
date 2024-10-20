@@ -13,7 +13,7 @@ body {
 	align-items: center;
 }
 
-.container {
+.ldsk_container {
 	display: flex;
 	background-color: white;
 	width: 80%;
@@ -22,7 +22,7 @@ body {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.left-section {
+.ldsk_left-section {
 	flex: 1;
 	background-color: #f1f1ff;
 	padding: 40px;
@@ -35,17 +35,17 @@ body {
 	text-align: center;
 }
 
-.left-section h1 {
+.ldsk_left-section h1 {
 	font-size: 2rem;
 	color: #6e54f8;
 	margin-bottom: 20px;
 }
 
-.left-section .illustration {
+.ldsk_left-section .ldsk_illustration {
 	margin-top: 30px;
 }
 
-.right-section {
+.ldsk_right-section {
 	flex: 1;
 	padding: 40px;
 	display: flex;
@@ -53,29 +53,29 @@ body {
 	justify-content: center;
 }
 
-.login-box {
+.ldsk_login-box {
 	max-width: 400px;
 	width: 100%;
 	margin: auto;
 }
 
-.login-box h2 {
+.ldsk_login-box h2 {
 	color: #6e54f8;
 	margin-bottom: 30px;
 	text-align: center;
 }
 
-.input-group {
+.ldsk_input-group {
 	margin-bottom: 20px;
 }
 
-.input-group label {
+.ldsk_input-group label {
 	display: block;
 	color: #333;
 	margin-bottom: 5px;
 }
 
-.input-group input {
+.ldsk_input-group input {
 	width: 100%;
 	padding: 10px;
 	border: 2px solid #ddd;
@@ -99,44 +99,44 @@ button:hover {
 	background-color: #5a3fd1;
 }
 
-.forgot-password {
+.ldsk_forgot-password {
 	text-align: right;
 	margin-top: 10px;
 }
 
-.forgot-password a {
+.ldsk_forgot-password a {
 	color: #6e54f8;
 	text-decoration: none;
 }
 
-.alternative-login {
+.ldsk_alternative-login {
 	text-align: center;
 	margin-top: 20px;
 }
 
-.alternative-login p {
+.ldsk_alternative-login p {
 	margin-bottom: 10px;
 }
 
-.social-login a {
+.ldsk_social-login a {
 	margin: 0 10px;
 }
 
-.social-login img {
+.ldsk_social-login img {
 	width: 30px;
 	height: 30px;
 }
 
-.signup {
+.ldsk_signup {
 	text-align: center;
 	margin-top: 20px;
 }
 
-.signup a {
+.ldsk_signup a {
 	color: #6e54f8;
 	text-decoration: none;
 }
 
-.signup a:hover {
+.ldsk_signup a:hover {
 	text-decoration: underline;
 }
