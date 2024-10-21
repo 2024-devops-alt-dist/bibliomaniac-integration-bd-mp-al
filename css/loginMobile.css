@@ -154,7 +154,7 @@ body {
 /* Media query for devices with a maximum width of 768px (mobile devices) */
 @media screen and (max-width: 768px) {
 	.lmbl_btn {
-		width: calc(100% - 40px); /* Accounting for padding */
+		width: calc(100% - 40px);
 		/* margin-bottom: 40px; */
 	}
 }

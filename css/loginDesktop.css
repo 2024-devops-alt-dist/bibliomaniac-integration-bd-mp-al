@@ -167,3 +167,21 @@ body {
 .ldsk_signup a:hover {
 	text-decoration: underline;
 }
+
+/* Media query for screen widths less than 100px */
+@media screen and (max-width: 1000px) {
+	.ldsk_login-container {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	.ldsk_left-section,
+	.ldsk_right-section {
+		width: 100%;
+		padding: 20px;
+	}
+	.ldsk_illustration img {
+		width: 80%;
+		height: auto;
+	}
+}
