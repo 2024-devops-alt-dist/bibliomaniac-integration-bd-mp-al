@@ -99,14 +99,13 @@ body {
 		display: block;
 	}
 }
-
 /* Main Content Styles */
-main {
+.ctgr_main {
 	max-width: 400px;
 	margin: 100px auto 0; /* Adjusted for fixed desktop navbar */
 }
 
-h1 {
+.ctgr_h1 {
 	text-align: left;
 	font-size: 24px;
 	color: #4b4b4b;
@@ -114,13 +113,13 @@ h1 {
 }
 
 /* Section (Category List) Styles */
-section.category {
+.ctgr_section.ctgr_category {
 	display: flex;
 	flex-direction: column;
 }
 
 /* Article (Category Items) Styles */
-article.category-item {
+.ctgr_article.ctgr_category-item {
 	display: flex;
 	align-items: center;
 	background-color: #e7dff2;
@@ -129,31 +128,31 @@ article.category-item {
 	margin-bottom: 20px;
 }
 
-article.category-item img {
+.ctgr_article.ctgr_category-item .ctgr_img {
 	width: 50px;
 	height: 50px;
 	margin-right: 15px;
 }
 
-article.category-item .text h2 {
+.ctgr_article.ctgr_category-item .ctgr_div.ctgr_text .ctgr_h2 {
 	font-size: 18px;
 	color: #645da9;
 	margin-bottom: 5px;
 }
 
-article.category-item .text p {
+.ctgr_article.ctgr_category-item .ctgr_div.ctgr_text .ctgr_p {
 	font-size: 14px;
 	color: #777;
 }
 
 /* Footer (Optional) */
-.footer {
+/* .ctgr_footer {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 30px;
 }
 
-.footer img {
+.ctgr_footer .ctgr_img {
 	width: 40px;
 	height: 40px;
-}
+} */
