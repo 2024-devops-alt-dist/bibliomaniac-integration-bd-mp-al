@@ -100,7 +100,8 @@ body {
 		display: block;
 	}
 }
-/* Main Content Styles */
+
+/* Category Main Content Styles */
 .ctgr_main {
 	max-width: 400px;
 	margin: 100px auto 0; /* Adjusted for fixed desktop navbar */
