@@ -1,4 +1,22 @@
 /* Media query for devices with a maximum width of 768px (mobile devices) */
+
+/* Root variables for colors and fonts */
+:root {
+	/* Color Variables */
+	--primary-color: #957dff; /* Light purple */
+	--background-color: #f5f5f7; /* Light background */
+	--dark-background-color: #212121; /* Dark background for contrast */
+	--text-color: #4b4b4b; /* Darker text */
+	--secondary-text-color: #777; /* Lighter text */
+	--border-color: #957dff; /* Border for button */
+	--button-hover-color: #6b5bb3; /* Button hover effect color */
+
+	/* Font Variables */
+	--font-primary: "Arial", sans-serif; /* Default font */
+	--font-size-default: 1rem; /* Default font size */
+	--font-size-large: 1.8rem; /* Large text */
+}
+
 @media screen and (max-width: 768px) {
 	.header {
 		display: block;
@@ -13,6 +31,11 @@
 
 	main {
 		margin: 0 0 6rem 0;
+	}
+
+    .lmbl_btn {
+		width: calc(100% - 40px);
+		/* margin-bottom: 40px; */
 	}
 }
 
@@ -40,9 +63,36 @@
 	}
 }
 
+
+/* Media query for screen widths less than 100px */
+@media screen and (max-width: 1100px) {
+	.ldsk_login-container {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	.ldsk_left-section,
+	.ldsk_right-section {
+		width: 100%;
+		padding: 20px;
+	}
+	.ldsk_illustration img {
+		width: 80%;
+		height: auto;
+	}
+}
+
+
+/* General resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
+	line-height: 1.6;
 }
 
 /* ----- HEADER STYLE ----- */
@@ -134,7 +184,7 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 1rem 2rem;
-	margin: 0;
+	margin: 10rem 0 0 0;
 }
 
 .footer-container {
@@ -149,6 +199,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+}
+
+.h2-footer {
+    color: white;
 }
 
 .footer-navigation {
@@ -399,17 +453,8 @@ body {
 	transition: opacity 0.5s 0.1s ease-in;
 }
 
-/* Basic reset and mobile-first styles */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: Arial, sans-serif;
-	line-height: 1.6;
-	padding: 20px;
+.collection-main {
+    padding: 20px;
 }
 
 .category {
@@ -513,32 +558,9 @@ h2 {
 	color: #777;
 }
 
-/* Root variables for colors and fonts */
-:root {
-	/* Color Variables */
-	--primary-color: #957dff; /* Light purple */
-	--background-color: #f5f5f7; /* Light background */
-	--dark-background-color: #212121; /* Dark background for contrast */
-	--text-color: #4b4b4b; /* Darker text */
-	--secondary-text-color: #777; /* Lighter text */
-	--border-color: #957dff; /* Border for button */
-	--button-hover-color: #6b5bb3; /* Button hover effect color */
+/* ---- LOGIN DESKTOP ----*/
 
-	/* Font Variables */
-	--font-primary: "Arial", sans-serif; /* Default font */
-	--font-size-default: 1rem; /* Default font size */
-	--font-size-large: 1.8rem; /* Large text */
-}
-
-/* General resets */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* Body styling for desktop version */
-body {
+.ldsk_body {
 	font-family: var(--font-primary);
 	display: flex;
 	justify-content: center;
@@ -683,26 +705,10 @@ body {
 	text-decoration: underline;
 }
 
-/* Media query for screen widths less than 100px */
-@media screen and (max-width: 1100px) {
-	.ldsk_login-container {
-		flex-direction: column;
-		width: 100%;
-		height: auto;
-	}
-	.ldsk_left-section,
-	.ldsk_right-section {
-		width: 100%;
-		padding: 20px;
-	}
-	.ldsk_illustration img {
-		width: 80%;
-		height: auto;
-	}
-}
 
-/* mobile login page */
-body {
+/* ---- LOGIN MOBILE ---- */
+
+.lmbl_body {
 	font-family: var(--font-primary);
 	display: flex;
 	justify-content: center;
@@ -822,12 +828,4 @@ body {
 
 .lmbl_sign-up a:hover {
 	text-decoration: underline;
-}
-
-/* Media query for devices with a maximum width of 768px (mobile devices) */
-@media screen and (max-width: 768px) {
-	.lmbl_btn {
-		width: calc(100% - 40px);
-		/* margin-bottom: 40px; */
-	}
 }
