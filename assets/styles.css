@@ -466,3 +466,49 @@ h2 {
 	font-size: 2em; /* Adjust font size as needed */
 	color: #333; /* Adjust color as needed */
 }
+
+/* Category Main Content Styles */
+.ctgr_main {
+	max-width: 400px;
+	margin: 100px auto 0; /* Adjusted for fixed desktop navbar */
+}
+
+.ctgr_h1 {
+	text-align: left;
+	font-size: 24px;
+	color: #4b4b4b;
+	margin-bottom: 20px;
+}
+
+/* Section (Category List) Styles */
+.ctgr_section.ctgr_category {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Article (Category Items) Styles */
+.ctgr_article.ctgr_category-item {
+	display: flex;
+	align-items: center;
+	background-color: #e7dff2;
+	padding: 15px;
+	border-radius: 12px;
+	margin-bottom: 20px;
+}
+
+.ctgr_article.ctgr_category-item .ctgr_img {
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.ctgr_article.ctgr_category-item .ctgr_div.ctgr_text .ctgr_h2 {
+	font-size: 18px;
+	color: #645da9;
+	margin-bottom: 5px;
+}
+
+.ctgr_article.ctgr_category-item .ctgr_div.ctgr_text .ctgr_p {
+	font-size: 14px;
+	color: #777;
+}
